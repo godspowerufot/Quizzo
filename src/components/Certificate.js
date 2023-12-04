@@ -3,7 +3,10 @@ import { PDFDocument, StandardFonts } from 'pdf-lib';
 import { certificateTemplate } from '../assets';
 
 import saveAs from './FileSaver.js';
-
+// Importing necessary dependencies:
+// PDFDocument and StandardFonts from the pdf-lib library for working with PDFs.
+// certificateTemplate is assumed to be the path to an existing PDF certificate template.
+// saveAs is a function (likely from the FileSaver library) used to save the generated PDF.
 // Draw the text on the page - Certificate Modification
 function modifyCertificate(pdfPage, text, xVal, yVal, fontSize, fontName) {
   pdfPage.drawText(text, {
